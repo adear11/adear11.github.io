@@ -1,23 +1,37 @@
 ---
 layout: default
+title: Adam Dear - PHP Developer and IT Professional
+description: This is my site. Welcome.
+keywords: adam dear php it professional
 ---
+<div class="small-12 columns">
+<h3 class='text-center'>Welcome!</h3>
+<p class='lead'>
+    I am <strong>Adam Dear</strong>, a Zend Certified PHP Engineer, IT Professional,
+    and overall tech enthusiast. This website is about me, my life, my work,
+    and my hobbies. I hope that you will learn something interesting about me!
+</p>
+<p>
+    Some of my greatest interests are PHP, JavaScript, Linux, Woodworking (specifically wood turning
+    on a lathe), anything related to technology, and craft beer.
+</p>
+<p>
+    Currently, I'm working as the Vice President of Information Technology and Senior Developer for a company that
+    provides a program of study for nursing students who are preparing to take the NCLEX exam.
+</p>
+<p>
+    If you are interested in my professional career, please take a look at <a href='{{ app.urlFor('resume') }}'>
+    my resume</a>.
+</p>
+<p>
+    If you are interested in contacting me, please visit my <a href='{{ app.urlFor('contact') }}'>Contact Page</a>
+    for a list all the various ways that you can get in touch with me.
+</p>
+<p>
+    This website serves not only as my personal site, but also as a sandbox for whatever new
+    technology I am trying to learn or am playing with. If you notice something broken or not working
+    as it should, please let me know.
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+    Thanks!
+</p>
 </div>
